@@ -1,7 +1,5 @@
 # twnty-test-project
 
-[DEMO]()
-
 # Used:
 
 React, HTML, SCSS, SASS Node version: 14.19.3
