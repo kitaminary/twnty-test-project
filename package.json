@@ -1,6 +1,6 @@
 {
   "homepage": "/",
-  "name": "react-typescript-starter-pack",
+  "name": "twnty-test-project",
   "version": "0.1.0",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.3",
