@@ -1,0 +1,280 @@
+@import '../../style/index.scss';
+
+.contacts {
+  height: 650px;
+  background-color: $BGcolor;
+  padding: $padding-phone - 10 $padding-phone $padding-phone + 5;
+
+  &__list__social {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 26px;
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 28px;
+  }
+
+  &__address {
+    color: $text-color;
+    font-size: $font-size;
+    line-height: 18px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__link {
+    font-size: $font-size;
+    line-height: 18px;
+    color: $text-color;
+  }
+
+  &__form {
+    display: block;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__send {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &__image {
+        width: 100px;
+        height: 100px;
+      }
+
+      &__text {
+        color: #25B04A;
+        font-size: 40px;
+      }
+    }
+
+    &__box {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+    }
+  }
+
+  &__submit {
+    width: 70px;
+    box-sizing: content-box;
+    color: $text-color;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 22px;
+    transition: color 0.3s linear;
+
+    &:hover {
+      color: rgb(60, 60, 60);
+    }
+
+    &:active {
+      color: #fff;
+    }
+  }
+
+  &__name {
+    height: $input-height;
+  }
+  &__email {
+    height: $input-height;
+  }
+  &__topic {
+    height: $input-height;
+  }
+  &__mess {
+    height: 110px;
+  }
+  &__privacy {
+    display: flex;
+    flex-direction: row;
+
+    &__checkbox {
+      z-index: 0;
+      transform: scale(130%);
+    }
+
+    &__link {
+      color: $text-color;
+      text-decoration: underline;
+    }
+
+    &__title {
+      padding-left: 5px;
+      width: 140px;
+      color: $text-color;
+      line-height: 10px;
+      font-size: 7px;
+    }
+  }
+
+  &__buttons__box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+input,
+textarea {
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: $text-color;
+
+  &::placeholder {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    &__title {
+      font-size: 45px;
+      line-height: 48px;
+    }
+
+    &__list {
+      gap: 40px;
+    }
+
+    &__form {
+      gap: 20px;
+
+      &__box {
+        gap: 20px;
+      }
+    }
+
+    &__name {
+      height: $input-height + 12;
+    }
+
+    &__email {
+      height: $input-height + 12;
+    }
+
+    &__topic {
+      height: $input-height + 12;
+    }
+
+    &__mess {
+      height: 225px;
+    }
+
+    &__link {
+      display: block;
+      font-size: $font-size + 4;
+      line-height: 28px;
+    }
+
+    &__address {
+      font-size: $font-size + 4;
+    }
+
+    &__privacy {
+      &__checkbox {
+        transform: scale(240%) translate(24%);
+      }
+      &__title {
+        padding-left: 30px;
+        width: 100%;
+        font-size: $font-size;
+        line-height: 20px;
+      }
+    }
+    &__submit {
+      font-size: 36px;
+      line-height: 38px;
+    }
+  }
+
+  input,
+  textarea {
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: $text-color;
+
+    &::placeholder {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 26px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .contacts {
+    &__title {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &__address {
+      line-height: 28px;
+    }
+
+    &__form {
+      &__box {
+        flex-direction: row;
+        justify-content: center;
+        gap: 28px;
+      }
+    }
+
+    &__privacy {
+      &__checkbox {
+        height: 33px;
+        width: 33px;
+        transform: translate(24%);
+      }
+
+      &__title {
+        width: 280px;
+      }
+    }
+
+    &__buttons__box {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__submit {
+      width: 150px;
+    }
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: $text-color;
+
+    &::placeholder {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 26px;
+    }
+  }
+}

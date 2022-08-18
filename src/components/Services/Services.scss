@@ -1,0 +1,84 @@
+@import '../../style/index.scss';
+
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  background-color: #d8d0c0;
+  width: $phone-width;
+
+  &__title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    color: $BGcolor;
+  }
+
+  &__services {
+    display: flex;
+    padding: 0 $padding-phone;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+    flex-wrap: wrap;
+    width: $phone-width;
+  }
+
+  &__photo {
+    object-fit: contain;
+    object-position: center;
+    width: 120px;
+    height: 50px;
+
+    &--bench {
+      object-position: bottom;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .services {
+    &__services {
+      padding: 0 $padding-phone * 2;
+      gap: 40px;
+    }
+
+    &__title {
+      font-size: 28px;
+      line-height: 34px;
+    }
+
+    &__photo {
+      height: 60px;
+      width: 160px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .services {
+    &__services {
+      padding: 0 $padding-phone * 2;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__title {
+      font-size: 34px;
+      line-height: 40px;
+    }
+
+    &__photo {
+      height: 80px;
+      width: 180px;
+      object-position: center;
+      &--bench {
+        object-position: center;
+      }
+    }
+  }
+}

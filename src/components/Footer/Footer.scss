@@ -1,0 +1,68 @@
+@import '../../style/index.scss';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $BGcolor;
+  border-top: 1px solid $text-color;
+  height: 186px;
+  width: $phone-width;
+  padding: 24px 33px 40px;
+
+  &__logo {
+    display: block;
+    width: 10px;
+    height: 16px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../images/LogoFooter.png);
+  }
+
+  &__guard {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__data-prodaction {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 35px $padding-phone * 2; 
+    height: 110px;
+
+    &__logo {
+      width: 20px;
+      height: 32px;
+    }
+    
+    &__data-prodaction {
+      text-align: right;
+    }
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .footer{
+    padding: 35px $padding-phone * 2;
+
+    &__guard {
+      font-size: 18px;
+    }
+
+    
+  &__data-prodaction {
+    text-align: right;
+    font-size: 18px;
+  }
+  }
+}

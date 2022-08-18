@@ -1,0 +1,69 @@
+@import '../../style/index.scss';
+
+@include logo;
+
+.nav {
+  position: fixed;
+  top: 0;
+  transform: translate(-100%);
+  box-sizing: border-box;
+  padding: $padding-phone;
+  background-color: $BGcolor;
+  width: $phone-width;
+  height: $phone-height;
+  transition: all 0.3s ease-in;
+  z-index: 1;
+
+  &--active {
+    transform: translate(0);
+  }
+
+  &__box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__close {
+    background-image: url(../../images/Cross.png);
+    transform: translateY(-5px);
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+  }
+
+  &__link {
+    color: $text-color;
+    font-size: 34px;
+    font-weight: bold;
+
+    &:active {
+      color: burlywood;
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .nav {
+    padding: $padding-phone + 10 $padding-phone *2  $padding-phone *2;
+
+    &__close {
+      width: 30px;
+      height: 30px;
+    }
+
+    &__link {
+      font-size: 60px;
+      line-height: 80px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .nav {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+}

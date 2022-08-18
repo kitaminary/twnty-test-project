@@ -1,0 +1,143 @@
+@import '../../style/index.scss';
+
+@include logo;
+
+.header {
+  padding: $padding-phone;
+  width: $phone-width;
+  height: $phone-height;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../images/background.png);
+  z-index: 0;
+
+  &__box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__hamburger {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../../images/Hamburger.png);
+    color: white;
+    width: 27px;
+    height: 14px;
+  }
+  &__text_box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__list {
+    display: none;
+  }
+
+  &__title {
+    text-align: left;
+    color: $text-color;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+    hyphens: manual;
+    -ms-hyphens: manual;
+    -webkit-hyphens: manual;
+    -moz-hyphens: manual;
+    box-sizing: content-box;
+  }
+
+  &__lang {
+    display: none;
+  }
+  &__subtitle {
+    text-align: left;
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 28px;
+    hyphens: manual;
+    -ms-hyphens: manual;
+    -webkit-hyphens: manual;
+    -moz-hyphens: manual;
+  }
+
+  &__arrow {
+    background-size: contain;
+    background-image: url(../../images/Arrow.png);
+    transform: translate(-3px, 1px);
+    width: 9px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: $padding-phone + 10 $padding-phone * 2 $padding-phone * 2;
+
+    &__hamburger {
+      width: 40px;
+      height: 20px;
+    }
+
+    &__title {
+      font-size: 50px;
+      line-height: 50px;
+    }
+
+    &__subtitle {
+      font-size: 28px;
+      line-height: 36px;
+    }
+
+    &__arrow {
+      width: 17px;
+      height: 57px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    padding: $padding-phone + 10 $padding-phone * 2 $padding-phone * 2;
+
+    &__title {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &__subtitle {
+      font-size: 34px;
+      line-height: 40px;
+    }
+
+    &__hamburger {
+      display: none;
+    }
+    &__arrow {
+      position: absolute;
+      bottom: $padding-phone * 2;
+      right: $padding-phone * 2;
+      width: 17px;
+      height: 57px;
+    }
+
+    &__list {
+      display: flex;
+      gap: 40px;
+    }
+
+    &__link {
+      color: $text-color;
+      line-height: auto;
+      font-size: 18px;
+    }
+    &__lang {
+      display: block;
+      color: $text-color;
+      line-height: auto;
+      font-size: 18px;
+    }
+  }
+}

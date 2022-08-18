@@ -1,0 +1,61 @@
+@import './mixins.scss';
+@import './variables.scss';
+
+.grid {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: space-between;
+  column-gap: 14px;
+  width: 100vw;
+
+  @include onTablet {
+    grid-template-columns: repeat(6, minmax(82px, 200px));
+    justify-content: space-between;
+    align-content: space-between;
+    column-gap: 14px;
+  }
+
+  @include onDesktop {
+    grid-template-columns: repeat(12, minmax(82px, 200px));
+  }
+
+  &--desktop {
+    width: 100%;
+  }
+
+  &__item {
+    margin: 0;
+    @for $start from 1 through 2 {
+      @for $end from $start through 2 {
+        &--#{$start}-#{$end} {
+          grid-column: #{$start} / #{$end + 1};
+        }
+      }
+    }
+
+    @include onTablet {
+      & {
+        @for $start from 1 through 6 {
+          @for $end from $start through 6 {
+            &--tablet-#{$start}-#{$end} {
+              grid-column: #{$start} / #{$end + 1};
+            }
+          }
+        }
+      }
+    }
+
+    @include onDesktop {
+      & {
+        @for $start from 1 through 12 {
+          @for $end from $start through 12 {
+            &--desktop-#{$start}-#{$end} {
+              grid-column: #{$start} / #{$end + 1};
+            }
+          }
+        }
+      }
+    }
+  }
+}
