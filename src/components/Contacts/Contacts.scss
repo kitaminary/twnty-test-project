@@ -61,7 +61,7 @@
 
       &__text {
         text-align: center;
-        color: #25B04A;
+        color: #25b04a;
         font-size: 40px;
       }
     }
@@ -149,6 +149,7 @@ textarea {
 
 @media (min-width: 768px) {
   .contacts {
+    padding: $padding-phone $padding-phone * 2;
     &__title {
       font-size: 45px;
       line-height: 48px;

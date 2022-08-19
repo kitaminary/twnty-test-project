@@ -45,6 +45,7 @@
   .services {
     padding: 30px $padding-phone * 2;
     &__services {
+      padding: 0 $padding-phone * 2;
       gap: 40px;
     }
 
@@ -65,6 +66,7 @@
     padding: $padding-phone $padding-phone * 2;
 
     &__services {
+      padding: 0 $padding-phone * 2;
       flex-direction: row;
       justify-content: space-between;
     }
