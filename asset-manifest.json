@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/twnty-test-project/static/css/main.56c61a68.chunk.css",
+    "main.css": "/twnty-test-project/static/css/main.e65b2a3e.chunk.css",
     "main.js": "/twnty-test-project/static/js/main.575537b0.chunk.js",
     "main.js.map": "/twnty-test-project/static/js/main.575537b0.chunk.js.map",
     "runtime-main.js": "/twnty-test-project/static/js/runtime-main.d6c3800b.js",
@@ -8,14 +8,14 @@
     "static/js/2.7070fdfb.chunk.js": "/twnty-test-project/static/js/2.7070fdfb.chunk.js",
     "static/js/2.7070fdfb.chunk.js.map": "/twnty-test-project/static/js/2.7070fdfb.chunk.js.map",
     "index.html": "/twnty-test-project/index.html",
-    "static/css/main.56c61a68.chunk.css.map": "/twnty-test-project/static/css/main.56c61a68.chunk.css.map",
+    "static/css/main.e65b2a3e.chunk.css.map": "/twnty-test-project/static/css/main.e65b2a3e.chunk.css.map",
     "static/js/2.7070fdfb.chunk.js.LICENSE.txt": "/twnty-test-project/static/js/2.7070fdfb.chunk.js.LICENSE.txt",
     "static/media/Header.scss": "/twnty-test-project/static/media/background.d9475829.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d6c3800b.js",
     "static/js/2.7070fdfb.chunk.js",
-    "static/css/main.56c61a68.chunk.css",
+    "static/css/main.e65b2a3e.chunk.css",
     "static/js/main.575537b0.chunk.js"
   ]
 }
