@@ -5,7 +5,7 @@
   flex-direction: column;
   gap: 50px;
   padding-top: 30px;
-  padding-bottom: 35px;
+  padding: 20px $padding-phone;
   justify-content: center;
   align-items: center;
   min-height: 400px;
@@ -13,7 +13,6 @@
   width: $phone-width;
 
   &__title {
-    padding: 0 $padding-phone;
     text-align: center;
     font-size: 18px;
     line-height: 22px;
@@ -44,8 +43,8 @@
 
 @media (min-width: 768px) {
   .services {
+    padding: 30px $padding-phone * 2;
     &__services {
-      padding: 0 $padding-phone * 2;
       gap: 40px;
     }
 
@@ -63,8 +62,9 @@
 
 @media (min-width: 1440px) {
   .services {
+    padding: $padding-phone $padding-phone * 2;
+
     &__services {
-      padding: 0 $padding-phone * 2;
       flex-direction: row;
       justify-content: space-between;
     }
