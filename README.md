@@ -5,7 +5,7 @@
 # Used:
 
 
-React, HTML, SCSS, SASS Node version: 14.19.3
+React 17.0.2, HTML5, SCSS, SASS Node version: 14.19.3
 
 # Start
 
